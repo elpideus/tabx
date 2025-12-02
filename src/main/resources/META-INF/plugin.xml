@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>space.elpideus.tabx</id>
+    <id>com.elpideus.tabx</id>
     <name>TabX</name>
     <vendor email="elpideus@gmail.com" url="https://www.elpideus.space">elpideus</vendor>
 
