@@ -1,7 +1,7 @@
-<h1>
-  <img src="src/main/resources/META-INF/pluginIcon.svg" alt="TabX Icon" width="64" height="64" style="vertical-align: middle; margin-right: 8px;">
-  TabX - JetBrains Plugin
-</h1>
+<p align="center">
+  <img src="src/main/resources/META-INF/pluginIcon.svg" alt="TabX Icon" width="254" height="254">
+  <h1>TabX - JetBrains Plugin</h1>
+</p>
 
 **TabX** is a lightweight plugin for JetBrains IDEs that allows you to **rename editor tabs** for better organization and readability.
 
