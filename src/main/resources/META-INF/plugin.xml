@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>space.elpideus.tabx</id>
+    <name>TabX</name>
+    <vendor email="elpideus@gmail.com" url="https://www.elpideus.space">elpideus</vendor>
+
+    <resource-bundle>messages.TabXBundle</resource-bundle>
+
+    <description><![CDATA[
+    Allows you to edit the name of your tabs.<br>
+    No need to check the folder name anymore, just rename your tabs to something else for better recognition.
+    ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <editorTabTitleProvider implementation="space.elpideus.tabx.TabXTitleProvider"/>
+    </extensions>
+
+    <actions>
+        <action id="space.elpideus.tabx.TabRenameAction"
+                class="space.elpideus.tabx.TabRenameAction"
+                text="Rename Tab"
+                description="Rename the current editor tab">
+
+            <keyboard-shortcut keymap="$default" first-keystroke="alt shift F2"/>
+            <add-to-group group-id="EditorTabPopupMenu" anchor="last"/>
+            <add-to-group group-id="ViewMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
